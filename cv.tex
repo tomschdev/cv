@@ -1,0 +1,208 @@
+\documentclass{resume}
+
+\usepackage{fontawesome}
+\usepackage{tikz}
+\usepackage[default]{lato}
+\usepackage[dvipsnames]{xcolor}
+% \usepackage{xcolor}
+% \usepackage{pagecolor}
+\usepackage{titlesec}
+\usepackage{needspace}
+
+\newcommand{\mystrut}{\rule[-0.4ex]{0pt}{2.2ex}}
+
+% Override frcontent so body (#3) can hold complex content like \begin{itemize}.
+% Emit a line break BEFORE each non-empty field (not after) so items that omit
+% the trailing field (#4) don't leave a dangling \newline and produce uneven
+% vertical spacing between list items.
+\makeatletter
+\renewenvironment{frcontent}[4]{%
+  {%
+    \textbf{#1}%
+    {\footnotesize
+      \def\@frcarg{#2}\ifx\@frcarg\@empty\else{\leavevmode\newline #2}\fi
+      \def\@frcarg{#3}\ifx\@frcarg\@empty\else{\leavevmode\newline #3}\fi
+      \def\@frcarg{#4}\ifx\@frcarg\@empty\else{\leavevmode\newline\textit{#4}}\fi
+    }%
+  }%
+}{}
+\makeatother
+
+\definecolor{lunowhite}{rgb}{0.913, 0.960, 1}
+\definecolor{lunoblue}{rgb}{0.027, 0.064, 0.478}
+\definecolor{slategrey}{rgb}{0.237,0.237,0.240}
+\definecolor{slatergrey}{rgb}{0.018,0.018,0.020}
+\definecolor{accentblue}{HTML}{555FA3}
+\definecolor{softwhite}{rgb}{0.95, 0.95, 0.90}
+
+\pagecolor{softwhite}
+\color{slategrey}
+
+
+\newcommand{\roundpic}[4][]{
+  \hspace*{-1cm}\tikz\node [circle, minimum width = #2,
+    path picture = {
+      \node [#1] at (path picture bounding box.center) {
+        \includegraphics[width=#3]{#4}};
+    }] {};}
+
+\begin{document}
+
+\enlargethispage{2\baselineskip}
+\noindent
+\begin{minipage}{\textwidth}
+
+	\begin{tabularx}{\linewidth}{@{}m{0.8\textwidth} m{0.2\textwidth}@{}}
+		{
+		\Large{Thomas Scholtz} \newline
+		\small{\color{accentblue}Product Engineer | Interested in permissionless \& decentralised systems} \newline
+		\small{
+			\clink{
+				\href{mailto:tomsch327@gmail.com}{tomsch327@gmail.com} \textbf{·}
+				{\fontdimen2\font=0.75ex +27823298609}
+			} \newline
+			Stellenbosch, South Africa
+		}
+		} &
+		{
+				\roundpic[xshift=-0.3cm,yshift=-0.9cm]{4cm}{6cm}{tomsuit-gray.jpg}
+			}
+	\end{tabularx}
+	\begin{center}
+		\begin{tabularx}{\linewidth}{@{}*{2}{X}@{}}
+			% left side %
+			{
+			\csection{\color{accentblue}ABOUT ME}{\footnotesize
+				\vspace{0.5em}
+				I build systems, and I would like to build systems that mean more to the average person in South Africa. I believe in the potential for the emergent effects of well-designed, well-intended systems to bring healthy transformation to society.
+				It is a primary interest of my career to build systems that repair a growing misalignment between economic and social/environmental incentives. I see economic incentives creating a pattern of highly sophisticated systems being duplicated
+				for narrow markets
+				- offering negligible utility to the average person and increasing fragmentation in the broader economy. I am dedicated to building decentralized, capture-resistant infrastructure that offers permissionless, frictionless, peer-to-peer interactions between the participants in our economy.
+				I am really excited by the solutions that are made possible by innovations in blockchain technology!\par
+				\vspace{0.5em}
+			}
+			\csection{\color{accentblue}EDUCATION}{\footnotesize
+				\begin{itemize}[noitemsep]
+					\item \frcontent{Studying MSc Computer Science}{Engineering Trustless Infrastructure for Regenerative Finance}{University of Stellenbosch}{2026 -- Present}
+					\item \frcontent{BSc Computer Science Honours, \textit{cum laude}}{University of Stellenbosch}{}{2021}
+					\item \frcontent{BCom Mathematical Sciences: Data Science}{University of Stellenbosch}{}{2018-2020}
+					\item \frcontent{IEB Matric with 7 Distinctions}{St Alban's College}{}{2017}
+				\end{itemize}
+				\textbf{Courses}
+				{\footnotesize
+					\href{https://courses.consensys.net/certificates/g0dh7caavq}{Blockchain Essentials: An Introduction to Blockchain (ConsenSys)},
+					\href{https://ude.my/UC-c03896e8-2dad-41f4-8462-38a84f63fb39}{Go: The Complete Developer's Guide},
+					\href{https://udemy-certificate.s3.amazonaws.com/pdf/UC-7844941d-eb9e-486a-8a28-419eb792b695.pdf}{gRPC and Golang Master Class: Modern API and Microservices},
+					\href{https://www.udemy.com/certificate/UC-441728e4-473f-49e3-bf99-e76d322dc060}{Machine Learning A-Z: Python in Data Science},
+					\href{https://www.udemy.com/course/docker-essentials/}{Docker Essentials},
+					\href{https://www.linkedin.com/learning/certificates/adc4b82d037940d4eeb13da02e74e3a77ca756037f2e956ad88b6fd677646a49}{Advanced Terraform},
+					\href{https://www.linkedin.com/learning/certificates/ee797bdd5c2cd50419341ab61ae545304af8e0874b5a4b13ce42df5307ec2c6e}{Learning Jenkins},
+					\href{https://www.linkedin.com/learning/certificates/6d8e3d96fc68310137056aedc57d9e0d1b816981472b0eaa8a5744b9596265f3}{Applied Concurrency in Go},
+					\href{https://www.linkedin.com/learning/certificates/b60f7364645ccadba873f0c3084a41d2b4d9e9f6cfe4dd9f19ac58f52d61c6c9}{Go Design Patterns},
+					\href{https://www.linkedin.com/learning/certificates/93c634c9ca6050c80095dd769eba7f2256edaa3b04e119e2e41057b5297c636a}{Serverless and Microservices for AWS},
+					\href{https://coursera.org/share/409dbb3793503c3bd733af94b0e0189d}{Foundations of Project Management},
+					\href{https://www.cloudskillsboost.google/public_profiles/72f01583-69a5-463d-9f54-645d5e366813/badges/3905424}{Manage Bigtable on Google Cloud}
+				}
+			}
+			}
+			% end left side %
+			 &
+			% right side %
+			{
+					\csection{\color{accentblue}EXPERIENCE}{\footnotesize
+						\begin{flushleft}
+							\begin{itemize}
+								\item \frcontent{Alis Exchange}{\color{slatergrey}\textit{Software Engineer \& Product Lead -- Hybrid, Stellenbosch}}{%
+									      \vspace*{-0.8\baselineskip}
+									      \begin{itemize}[noitemsep,topsep=0pt,partopsep=0pt,parsep=0pt,leftmargin=1.2em,label=$\circ$]
+										      \item \textbf{Platform Team} -- in a team of $\sim$5, I jointly drove product management for Alis Build platform features, presenting cases for feature development and owning the implementation of said features. Lead developer of a system for automatic Excel Add-in API wrapping, which generates domain-driven, enterprise-secured Excel add-ins from platform-defined APIs.
+										      \item \textbf{Solutions Architect} -- in teams of 1--3, I refined clients' business context into shipped solutions. Lead developer on multiple client-facing systems such as:
+										            Portfolio Guidelines review system for South African wealth managers; Highly customisable AI-first financial report builder; Human-in-the-loop AI task supervision/orchestration system;
+										            Files Exchange: an
+										            event-driven, robust, performant file integration+parsing+ingestion engine.
+										      \item \textbf{Product Lead} -- lead product manager and engineer of CodeBlocks: a resource on Alis Build (GCP) that manages creation, consumption, contribution, evolution, and monetisation of collections of code in an economy of builders. Implemented with Resource Driven Design, RBAC, Git, and Gemini-powered A2A agents.
+									      \end{itemize}
+									      \textit{Protocol Buffers, Go, Vue, Flutter, gRPC, GCP}.
+								      }{April 2023 -- Present}
+								      % item alis %
+								\item \frcontent{LifeQ}{\color{slatergrey}\textit{Golang Developer - Hybrid, Stellenbosch}}{Built software in an agile, Kanban workflow with a strong emphasis on automation. Honed skills in the Go toolchain by shipping local CLI tools and event-driven serverless solutions provisioned with Terraform. \newline
+									      \textit{Go, Scala, Terraform, Docker, AWS}.
+								      }{September 2022}
+								      % item 1 %
+								\item \frcontent{Octoco}{\color{slatergrey}\textit{Software Engineer - Hybrid, Stellenbosch}}{Full-stack development of
+									      solutions for local start-ups.
+									      \textit{.NET, Python, Flutter, Firebase, AWS IoT \& ML}
+								      }{February 2022 - May 2022}
+								      % item 2 %
+								\item \frcontent{CS Department, Stellenbosch University}{\color{slatergrey}\textit{Teaching Assistant}}{}{1st Semester 2021}
+							\end{itemize}
+						\end{flushleft}
+					}
+				}
+			% end right side %
+		\end{tabularx}
+	\end{center}
+\end{minipage}
+\newpage
+\noindent
+\begin{minipage}{\textwidth}
+
+	\begin{center}
+		\begin{tabularx}{\linewidth}{@{}*{2}{X}@{}}
+			% left side %
+			{
+			\csection{\color{accentblue}PROJECTS}{\footnotesize
+				\begin{flushleft}
+					\begin{itemize}[noitemsep]
+						\item \frcontent{Learn2Earn: An LMS for W4AL}{}{I am currently building a Learning Management System (LMS) for Work 4 A Living (W4AL) -
+							      mobile-first and optimised for low-resource environments, to be delivered on iOS, Android and Web. The application is a client on top of course objects that satisfy the xAPI E-Learning Protocol, an established course authorship framework.
+							      Learners are able to authenticate with Phone OTP, Email or Google. Learners can browse available courses and purchase an enrolment for those that they are interested in. A valid enrolment grants a user the right to engage with course material and complete quizzes. Learners are also able to download courses for offline consumption.
+						      }{Flutter, Go, xAPI, GCP, RBAC, OAUTH2, Protocol Buffers}
+						\item \frcontent{Blueprint: A recursive multi-agent system for decomposing concepts into components of a technology stack}{}{A deterministic orchestrator recursively invokes three specialised LLM agents --- \textit{concept-to-component}, \textit{concept-decomposer}, and \textit{technologist} --- which together break a high-level software concept into sub-concepts and map each to a component of a recommended technology stack. The orchestrator itself gates termination via confidence scores on every mapping: either the blueprint is returned or decomposition continues. I am testing the hypothesis that replacing broad task management with a confidence-gated recursive loop over narrow agents lets LLMs handle requests whose scope would otherwise overwhelm a single model.
+						      }{Go, A2A, ADK, gRPC, Gemini, Flutter}
+						\item \frcontent{Anomaly Detection in CCTV Surveillance}{}{This work proposes a solution to anomaly detection in CCTV surveillance in the form of a consensus framework that combines inputs from three sources, two of which are novel approaches. Experiments were conducted on the UCF Crime data set which comprises 128 hours of untrimmed, public surveillance.}{Python, Tensorflow, Docker, Streamlit}\clink{\href{https://drive.google.com/drive/folders/1ivRc2bF5jZcORjiM1zKs6ILV8WoXrEcZ?usp=sharing}{[view paper]}}
+						\item \frcontent{lifeq-cli}{I accidentally rewrote LifeQ's CLI. While dealing with the consequences of technical debt, I learned lessons about scope creep and preoptimisation.}{}{Go, Cobra CLI}
+						\item \frcontent{More}{I've developed a solid understanding of the first principles of computer science via the completion of projects in artificial intelligence, computer vision, advanced algorithms, machine learning, functional programming, networking, parallel computing and software engineering.}{}{}
+					\end{itemize}
+				\end{flushleft}}
+			}
+			% end left side %
+			 &
+			% right side %
+			{
+					\csection{\color{accentblue}MORE ABOUT ME}{\footnotesize
+						\begin{itemize}[noitemsep]
+							\item \frcontent{Research Publication}{Stellenbosch University}{My Honours research was published in Volume 85 of the EPiC Series in Computing and the Proceedings of the 43rd Conference of the SAICSIT}{2022}
+							\item \frcontent{Member of Golden Key Society}{Stellenbosch University}{}{2021}
+							\item \frcontent{Film Photography}{}{I enjoy film photography --- I think it has something to do with the authenticity of the light, the mechanical design, delayed gratification, creativity, and a reason to travel and explore. \clink{\href{https://tomschdev.github.io/t0mf00l3ry/}{[t0mf00l3ry]}}}{}
+							\item \frcontent{Major Tom and Episode}{}{I have an appreciation for a well-designed T-shirt. At university, a friend (Jono Major) and I founded \textit{Major Tom} --- a brand built around comic-book artworks I drew in MS Paint and printed on the back of shirts, following a high-profile astronaut and his low-key alien friend through braai scenes laced with global conspiracy theories. I couldn't produce the artworks fast enough, so I'm now working on a related concept: \href{https://episode04.com}{episode04.com}.}{}
+							\item \frcontent{Exercise and Nature}{}{I love outdoor endurance sports --- trail running, rowing, hiking, and surfing (which, while not technically an endurance sport, feels like an endurance sport). I also love tennis, but I'm not very good at it.}{}
+							\item \frcontent{SA Schools' Men's 4x Champion}{SA Schools' National Regatta, Roodeplaat Dam}{}{2017}
+							\item \frcontent{SA Schools' Boatrace Champion}{Annual SA Schools' Boatrace, Kowie River}{2015}{
+								      \clink{\href{https://theogarrun.blogspot.com/2021/08/these-teams-stood-out.html}{[Item(8): An account by Theo Garrun]}}}
+							\item \frcontent{Ideas!}{}{If there is one thing that comes naturally to me, it is creative ideas. So far I have spent my life learning skills and gaining experience to aid the implementation of good ideas --- I hope to become an entrepreneur from my best ones.}{}
+							\item \frcontent{An AI Paradox}{}{I'm currently living with a paradox where I am highly skeptical of the implications of AI on our future but also spending a fair amount of time developing AI-driven workflows for rapid development of quality software.}{}
+						\end{itemize}
+					}
+				}
+		\end{tabularx}
+	\end{center}
+\end{minipage}
+\needspace{\baselineskip}
+% \null\vfill
+\vspace*{\fill}
+\hspace{-0.33\linewidth}\colorbox{accentblue}{
+	\makebox[1.5\linewidth][c]{
+		\mystrut \small
+		\textcolor{white}{
+			\href{https:/www.linkedin.com/in/thomas-scholtz-32701}
+			{https:/www.linkedin.com/in/thomasscholtz}
+		} $\cdot$
+		\textcolor{white}{
+			\href{https://github.com/tomschdev}
+			{https://github.com/tomschdev}
+		}
+	}
+}
+
+\end{document}
