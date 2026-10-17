@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  16 OCT 2026 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  17 OCT 2026 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1103,16 +1103,25 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 (/usr/local/texlive/2026/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
+(/usr/local/texlive/2026/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen285
+\ESO@tempdimb=\dimen286
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
 \logoboxw=\skip61
 \logoboxh=\skip62
 LaTeX Font Info:    Trying to load font information for OT1+lato-TLF on input l
-ine 67.
+ine 117.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/lato/OT1lato-TLF.fd
 File: OT1lato-TLF.fd 2019/06/24 Font definitions for OT1/lato-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 67.
+(Font)              scaled to size 14.4pt on input line 117.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
@@ -1121,24 +1130,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 (./cv.aux)
 \openout1 = `cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1174,7 +1183,7 @@ LaTeX Font Info:    ... okay on input line 67.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 117.
 (./cv.out) (./cv.out)
 \@outlinefile=\write4
 \openout4 = `cv.out'.
@@ -1183,13 +1192,13 @@ Package hyperref Info: Link coloring OFF on input line 67.
 (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count332
-\scratchdimen=\dimen285
+\scratchdimen=\dimen287
 \scratchbox=\box73
 \nofMPsegments=\count333
 \nofMParguments=\count334
 \everyMPshowfont=\toks41
 \MPscratchCnt=\count335
-\MPscratchDim=\dimen286
+\MPscratchDim=\dimen288
 \MPnumerator=\count336
 \makeMPintoPDFobject=\count337
 \everyMPtoPDFconversion=\toks42
@@ -1207,74 +1216,57 @@ e
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmtt.fd)
 (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ts1lmtt.fd)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lato/TS1lato-TLF.fd)
 File: tom-film-crop.jpeg Graphic file (type jpg)
 <use tom-film-crop.jpeg>
-Package pdftex.def Info: tom-film-crop.jpeg  used on input line 90.
+Package pdftex.def Info: tom-film-crop.jpeg  used on input line 154.
 (pdftex.def)             Requested size: 122.34692pt x 122.3403pt.
 
-Overfull \hbox (11.99998pt too wide) in alignment at lines 90--90
+Overfull \hbox (11.99998pt too wide) in alignment at lines 154--154
 [][] 
  []
 
-(/usr/local/texlive/2026/texmf-dist/tex/latex/lato/TS1lato-TLF.fd)
 File: logos/maties.png Graphic file (type png)
 <use logos/maties.png>
-Package pdftex.def Info: logos/maties.png  used on input line 173.
+Package pdftex.def Info: logos/maties.png  used on input line 229.
 (pdftex.def)             Requested size: 14.0928pt x 14.0928pt.
 File: logos/uzh.png Graphic file (type png)
 <use logos/uzh.png>
-Package pdftex.def Info: logos/uzh.png  used on input line 173.
+Package pdftex.def Info: logos/uzh.png  used on input line 229.
 (pdftex.def)             Requested size: 19.7386pt x 7.48705pt.
 File: logos/maties.png Graphic file (type png)
 <use logos/maties.png>
-Package pdftex.def Info: logos/maties.png  used on input line 173.
+Package pdftex.def Info: logos/maties.png  used on input line 229.
 (pdftex.def)             Requested size: 14.0928pt x 14.0928pt.
 File: logos/maties.png Graphic file (type png)
 <use logos/maties.png>
-Package pdftex.def Info: logos/maties.png  used on input line 173.
+Package pdftex.def Info: logos/maties.png  used on input line 229.
 (pdftex.def)             Requested size: 14.0928pt x 14.0928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-\OT1/lato-TLF/b/n/10 Courses []\OT1/lato-TLF/m/n/10 Blockchain Es-sen-tials: An
- In-tro-duc-tion to
- []
-
-
-Underfull \hbox (badness 2635) in paragraph at lines 173--173
-\OT1/lato-TLF/m/n/10 Mi-croser-vices[], []Ma-chine Learn-ing A-Z: Python in Dat
-a
- []
-
-
-Underfull \hbox (badness 1708) in paragraph at lines 173--173
-[]\OT1/lato-TLF/m/n/10 Server-less and Mi-croser-vices for AWS[], []Foun-da-tio
-ns of
+Underfull \hbox (badness 1014) in paragraph at lines 229--229
+[][] \OT1/lato-TLF/b/n/10 BCom Math-e-mat-i-cal Sci-ences: Data Sci-
  []
 
 File: logos/alis.png Graphic file (type png)
 <use logos/alis.png>
-Package pdftex.def Info: logos/alis.png  used on input line 173.
+Package pdftex.def Info: logos/alis.png  used on input line 229.
 (pdftex.def)             Requested size: 8.83318pt x 14.09915pt.
 File: logos/gcp-partner.png Graphic file (type png)
 <use logos/gcp-partner.png>
-Package pdftex.def Info: logos/gcp-partner.png  used on input line 173.
+Package pdftex.def Info: logos/gcp-partner.png  used on input line 229.
 (pdftex.def)             Requested size: 43.15869pt x 10.50003pt.
 File: logos/interface.png Graphic file (type png)
 <use logos/interface.png>
-Package pdftex.def Info: logos/interface.png  used on input line 173.
-(pdftex.def)             Requested size: 14.0995pt x 14.0995pt.
+Package pdftex.def Info: logos/interface.png  used on input line 229.
+(pdftex.def)             Requested size: 19.7369pt x 9.55615pt.
 File: logos/lifeq.png Graphic file (type png)
 <use logos/lifeq.png>
-Package pdftex.def Info: logos/lifeq.png  used on input line 173.
+Package pdftex.def Info: logos/lifeq.png  used on input line 229.
 (pdftex.def)             Requested size: 14.09856pt x 14.09856pt.
 File: logos/octoco.png Graphic file (type png)
 <use logos/octoco.png>
-Package pdftex.def Info: logos/octoco.png  used on input line 173.
+Package pdftex.def Info: logos/octoco.png  used on input line 229.
 (pdftex.def)             Requested size: 14.02145pt x 14.09935pt.
-File: logos/maties.png Graphic file (type png)
-<use logos/maties.png>
-Package pdftex.def Info: logos/maties.png  used on input line 173.
-(pdftex.def)             Requested size: 14.0928pt x 14.0928pt.
 [1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
@@ -1285,20 +1277,15 @@ ist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc
 to/a_vc7epu.enc} <./tom-film-crop.jpeg> <./logos/maties.png> <./logos/uzh.png> 
 <./logos/gcp-partner.png> <./logos/interface.png> <./logos/lifeq.png> <./logos/
 octoco.png> <./logos/alis.png>]
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 236.
-
-Overfull \hbox (123.81201pt too wide) in paragraph at lines 224--237
-[] [][][][][][] 
- []
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.238 \end{document}
-                     [2] (./cv.aux)
+l.290 \end{document}
+                    
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 290.
+ [2] (./cv.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1307,11 +1294,11 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23969 strings out of 467525
- 445069 string characters out of 5418982
- 901329 words of memory out of 5000000
- 52449 multiletter control sequences out of 15000+600000
- 667576 words of font info for 77 fonts, out of 8000000 for 9000
+ 24310 strings out of 467525
+ 451878 string characters out of 5418982
+ 1135798 words of memory out of 5000000
+ 52777 multiletter control sequences out of 15000+600000
+ 681123 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,19n,104p,1470b,1173s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb><
@@ -1322,10 +1309,10 @@ b></usr/local/texlive/2026/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pfb
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/loca
 l/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/
 2026/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on cv.pdf (2 pages, 682281 bytes).
+Output written on cv.pdf (2 pages, 696802 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 196 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
