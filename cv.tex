@@ -10,6 +10,24 @@
 \usepackage{needspace}
 
 \newcommand{\mystrut}{\rule[-0.4ex]{0pt}{2.2ex}}
+% Every logo gets the same box: scaled to fit (aspect ratio kept), then padded
+% on the right and centred vertically on the text, so marks of different shapes
+% occupy identical space.
+\newlength{\logoboxw}\setlength{\logoboxw}{1.4em}
+\newlength{\logoboxh}\setlength{\logoboxh}{1.0em}
+% Entry title linked to the organisation's site, styled as a conventional
+% hyperlink: no link box, text and underline in the section-heading blue
+% (accentblue). The logo links too but sits outside the underline.
+% Usage: \entrytitle[logo opts]{logo}{url}{text};  \bluelink{url}{text} inline.
+\newcommand{\bluelink}[2]{{\hypersetup{pdfborder={0 0 0}}\href{#1}{{\color{accentblue}\underline{#2}}}}}
+\newcommand{\entrytitle}[4][]{{%
+  \hypersetup{pdfborder={0 0 0}}%
+  \href{#3}{\complogo[#1]{#2}}%
+  \bluelink{#3}{#4}}}
+\newcommand{\complogo}[2][]{%
+  \makebox[\logoboxw][l]{\raisebox{\dimexpr0.35em-\height/2\relax}{%
+    \includegraphics[width=\logoboxw,height=\logoboxh,keepaspectratio,#1]{logos/#2}}}%
+  \hspace{0.3em}}
 
 % Override frcontent so body (#3) can hold complex content like \begin{itemize}.
 % Emit a line break BEFORE each non-empty field (not after) so items that omit
@@ -50,7 +68,9 @@
 
 \enlargethispage{2\baselineskip}
 \noindent
-\begin{minipage}{\textwidth}
+% Fixed height: if page 1 overflows, the excess runs off the bottom instead of
+% the whole (unbreakable) minipage being bumped to a new, leaving page 1 blank.
+\begin{minipage}[t][\textheight][t]{\textwidth}
 
 	\begin{tabularx}{\linewidth}{@{}m{0.8\textwidth} m{0.2\textwidth}@{}}
 		{
@@ -65,7 +85,7 @@
 		}
 		} &
 		{
-				\roundpic[xshift=-0.3cm,yshift=-0.9cm]{4cm}{6cm}{tomsuit-gray.jpg}
+				\roundpic[xshift=0cm,yshift=-0.1cm]{4cm}{4.3cm}{tom-film-crop.jpeg}
 			}
 	\end{tabularx}
 	\begin{center}
@@ -83,10 +103,10 @@
 			}
 			\csection{\color{accentblue}EDUCATION}{\footnotesize
 				\begin{itemize}[noitemsep]
-					\item \frcontent{Studying MSc Computer Science}{Engineering Trustless Infrastructure for Regenerative Finance}{University of Stellenbosch}{2026 -- Present}
-					\item \frcontent{BSc Computer Science Honours, \textit{cum laude}}{University of Stellenbosch}{}{2021}
-					\item \frcontent{BCom Mathematical Sciences: Data Science}{University of Stellenbosch}{}{2018-2020}
-					\item \frcontent{IEB Matric with 7 Distinctions}{St Alban's College}{}{2017}
+					\item \frcontent{\complogo{maties}Studying MSc Computer Science}{How can blockchain-based markets coordinate South Africa's economy?}{University of Stellenbosch}{2026 -- Present}
+					\item \frcontent{\complogo{uzh}University of Zurich}{International Summer School: Deep Dive into Blockchain -- Linking Economics, Technology and Law}{Awarded most critical thinker}{5 -- 24 July 2026}
+					\item \frcontent{\complogo{maties}BSc Computer Science Honours, \textit{cum laude}}{University of Stellenbosch}{}{2021}
+					\item \frcontent{\complogo{maties}BCom Mathematical Sciences: Data Science}{University of Stellenbosch}{}{2018-2020}
 				\end{itemize}
 				\textbf{Courses}
 				{\footnotesize
@@ -112,29 +132,39 @@
 					\csection{\color{accentblue}EXPERIENCE}{\footnotesize
 						\begin{flushleft}
 							\begin{itemize}
-								\item \frcontent{Alis Exchange}{\color{slatergrey}\textit{Software Engineer \& Product Lead -- Hybrid, Stellenbosch}}{%
+								\item \frcontent{\entrytitle[trim=28 10 28 9,clip]{alis}{https://alisx.com}{Alis Exchange}\hfill\raisebox{\dimexpr0.35em-\height/2\relax}{\includegraphics[height=1.05em]{logos/gcp-partner}}}{\color{slatergrey}\textit{Software Engineer \& Product Lead -- Hybrid, Stellenbosch}}{%
 									      \vspace*{-0.8\baselineskip}
 									      \begin{itemize}[noitemsep,topsep=0pt,partopsep=0pt,parsep=0pt,leftmargin=1.2em,label=$\circ$]
-										      \item \textbf{Platform Team} -- in a team of $\sim$5, I jointly drove product management for Alis Build platform features, presenting cases for feature development and owning the implementation of said features. Lead developer of a system for automatic Excel Add-in API wrapping, which generates domain-driven, enterprise-secured Excel add-ins from platform-defined APIs.
-										      \item \textbf{Solutions Architect} -- in teams of 1--3, I refined clients' business context into shipped solutions. Lead developer on multiple client-facing systems such as:
+										      \item \textbf{Technical Project Lead} \textit{(part-time, Jun 2026 -- Present)} -- project managed and engineered two French-first AI systems for Cactus, a Luxembourg-based retail chain. Market Intelligence monitors competitors by ingesting promotional media, relating embedded content to internal SKUs, and proposing high-impact insights to relevant departments. Predictive Ordering forecasts demand per article per store (SARIMAX) and turns daily sales files into explainable orders for buyers to review. The product timelines were shortened to 12 weeks, in parallel, and my colleague had to make an early exit. This made for a high-pressure environment which yielded good learnings in the end.
+										      \item \textbf{Solutions Architect} \textit{(Jun 2025 -- Jun 2026)} -- in teams of 1--3, I refined clients' business context into shipped solutions. Lead developer on multiple client-facing systems such as:
 										            Portfolio Guidelines review system for South African wealth managers; Highly customisable AI-first financial report builder; Human-in-the-loop AI task supervision/orchestration system;
 										            Files Exchange: an
 										            event-driven, robust, performant file integration+parsing+ingestion engine.
-										      \item \textbf{Product Lead} -- lead product manager and engineer of CodeBlocks: a resource on Alis Build (GCP) that manages creation, consumption, contribution, evolution, and monetisation of collections of code in an economy of builders. Implemented with Resource Driven Design, RBAC, Git, and Gemini-powered A2A agents.
+										      \item \textbf{Product Engineer} -- lead product manager and engineer of CodeBlocks: a resource on Alis Build (GCP) that manages creation, consumption, contribution, evolution, and monetisation of collections of code in an economy of builders. Implemented with Resource Driven Design, RBAC, Git, and Gemini-powered A2A agents.
+										      \item \textbf{Solutions Engineer} \textit{(May 2024 -- Jun 2025)}
+										      \item \textbf{Platform Engineer} \textit{(Jul 2023 -- May 2024)} -- in a team of $\sim$5, I jointly drove product management for Alis Build platform features, presenting cases for feature development and owning the implementation of said features. Lead developer of a system for automatic Excel Add-in API wrapping, which generates domain-driven, enterprise-secured Excel add-ins from platform-defined APIs.
 									      \end{itemize}
 									      \textit{Protocol Buffers, Go, Vue, Flutter, gRPC, GCP}.
 								      }{April 2023 -- Present}
 								      % item alis %
-								\item \frcontent{LifeQ}{\color{slatergrey}\textit{Golang Developer - Hybrid, Stellenbosch}}{Built software in an agile, Kanban workflow with a strong emphasis on automation. Honed skills in the Go toolchain by shipping local CLI tools and event-driven serverless solutions provisioned with Terraform. \newline
+								\item \frcontent{\entrytitle{interface}{https://interface.exchange}{Interface Exchange}}{\color{slatergrey}\textit{Founder}}{%
+								      Founded to pursue collaborative and solo passion projects in a personal capacity:
+								      \begin{itemize}[noitemsep,topsep=0pt,partopsep=0pt,parsep=0pt,leftmargin=1.2em,label=$\circ$]
+								      	\item \bluelink{https://j2e.app}{\textbf{j2e.app}} -- Interface's first commercial solution, built for non-profit \bluelink{https://work4aliving.org}{work4aliving.org}. I continue to lead stakeholder engagement, coordination and development of the Journey2Excellence platform -- a cross-platform learning management system optimised for individuals on the go in low-resource environments.
+								      	\item \bluelink{https://attestant-positions.vercel.app/}{\textbf{testify}} -- know and be known. An on-chain (Hedera) credentialing system where issuers sign verifiable credentials to user profiles and positions are posted as credential filters, turning the job market into a public order book where a match earns an interview.
+								      	\item \bluelink{https://episode08.com}{\textbf{episode08.com}} -- a true passion project turned entrepreneurial pursuit. Tell your stories on the back of your shirts: the world's first social media that is truly social.
+								      \end{itemize}
+								      }{}
+								\item \frcontent{\entrytitle{lifeq}{https://lifeq.com}{LifeQ}}{\color{slatergrey}\textit{Golang Developer - Hybrid, Stellenbosch}}{Built software in an agile, Kanban workflow with a strong emphasis on automation. Honed skills in the Go toolchain by shipping local CLI tools and event-driven serverless solutions provisioned with Terraform. \newline
 									      \textit{Go, Scala, Terraform, Docker, AWS}.
 								      }{September 2022}
 								      % item 1 %
-								\item \frcontent{Octoco}{\color{slatergrey}\textit{Software Engineer - Hybrid, Stellenbosch}}{Full-stack development of
+								\item \frcontent{\entrytitle{octoco}{https://octoco.ltd}{Octoco}}{\color{slatergrey}\textit{Software Engineer - Hybrid, Stellenbosch}}{Full-stack development of
 									      solutions for local start-ups.
 									      \textit{.NET, Python, Flutter, Firebase, AWS IoT \& ML}
 								      }{February 2022 - May 2022}
 								      % item 2 %
-								\item \frcontent{CS Department, Stellenbosch University}{\color{slatergrey}\textit{Teaching Assistant}}{}{1st Semester 2021}
+								\item \frcontent{\entrytitle{maties}{https://www.su.ac.za}{CS Department, Stellenbosch University}}{\color{slatergrey}\textit{Teaching Assistant}}{}{1st Semester 2021}
 							\end{itemize}
 						\end{flushleft}
 					}

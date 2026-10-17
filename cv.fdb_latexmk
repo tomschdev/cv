@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776867090.957 "cv.tex" "cv.pdf" "cv" 1776867091.87131 0
+["pdflatex"] 1792174794.06712 "cv.tex" "cv.pdf" "cv" 1792174795.51445 0
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lato/a_rt66h3.enc" 1561498483 3345 f5bff336afd6959239b79815a9c623d1 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lato/a_vc7epu.enc" 1561498483 2837 71470f4f1f9e810bb7f97954be46f052 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lato/a_y72t7m.enc" 1561498483 2827 edb6577ce87a761a903cb37772e591dd ""
@@ -191,11 +191,18 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1776690354 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774209607 3636776 dc5fa9b6b1453b9d196cd42edf876004 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "cv.aux" 1776867091.72532 280 152afeb2fb71cc5e1310b66d1e62c132 "pdflatex"
-  "cv.out" 1776867091.5029 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.tex" 1776867085.96186 14057 938b3aaef97bb8037765b353da847673 ""
-  "resume.cls" 1776768904.79265 881 e3a3950f834042c64862c59e120f531d ""
-  "tomsuit-gray.jpg" 1776866322.07196 74555 7d66d1e2f20027260facedf416b2c1bc ""
+  "cv.aux" 1792174795.31791 280 8e90ecfd665d8850e13632c0dafd7310 "pdflatex"
+  "cv.out" 1792174794.7461 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv.tex" 1792174793.93152 17974 c29de50d43c95cc4573ca8af2190a9e0 ""
+  "logos/alis.png" 1792097542.74778 1894 1d78b350a4e1e533b8b02d53bfd4ec04 ""
+  "logos/gcp-partner.png" 1792172338.89762 12707 a122f5bdcccda4412519259bd044e382 ""
+  "logos/interface.png" 1792164484.32824 102302 c343c5c425430a7d2940177c4d1d2a13 ""
+  "logos/lifeq.png" 1792159638.66197 5256 6197e302c5f8425aa0af9ebaaa737aad ""
+  "logos/maties.png" 1792159987.3838 289526 c0c949a07f1466610d1f5f916b4e97f4 ""
+  "logos/octoco.png" 1792097542.74225 15894 06fab3f78e705bd3dc1ff2a208896eec ""
+  "logos/uzh.png" 1792159638.61634 996 54fb562bdf4940214d43b0e3ab03d389 ""
+  "resume.cls" 1792097370.32126 881 e3a3950f834042c64862c59e120f531d ""
+  "tom-film-crop.jpeg" 1792159811.89475 73371 574bad0e9dc86bb3b4a6a693f6eb2069 ""
   (generated)
   "cv.aux"
   "cv.log"
